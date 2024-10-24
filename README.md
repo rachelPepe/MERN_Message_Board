@@ -1,11 +1,12 @@
 # MERN_message_board
 
+This application is not my original work.  I followed along with a tutorial from Zybooks.
 
 The full application is created using the MERN stack 
     - REACT - uses web API to obtain data that is displayed in the UI (frontend)
     - EXPRESS - processes web API requests from React code and sends back responses (backend)
     - NODE - hosts the web server and web API (backend)
-    - MONGODB - stores the apps data in a document database (backend)
+    - MONGODB - stores the app's data in a document database (backend)
 
 The Message Board uses MongoDB to store the messages in a database.
 The Node web server hosts a web API that allows for retrieving, adding, editing, and deleting messages stored in the MongoDB database.
