@@ -90,7 +90,26 @@ router.put("/:id", function(req, res){
 
 
 
-/* Route delete message by id */
+/* Route delete message by id using request body
+- if succesful returns 404 status (no content)
+- if message not found returns 404 status
+- if error occurs returns 400 status with error 
+*/
+router.delete("/:id", function(req, res) {
+    Message.deleteOne({ _id: req.params.is }, function(err, result) {
+        if (err) {
+            res.status(400).send(err);
+        }
+        else if (result.matchedCount === 0) {
+            res.sendStatus(404);
+        }
+        else {
+            res.sendStatus(204)
+        }
+    });
+});
+
+module.exports = router;
 
 
 

@@ -3,7 +3,7 @@
 
 const mongoose = require("mongoose");
 mongoose.connect("mongodb://localhost/message_db");
-module.export = mongoose;
+module.exports = mongoose;
 
 /* 
 - In db.js, the command mongoose.connect("mongodb://localhost/message_db"); creates message_db if the database does not exist. 
