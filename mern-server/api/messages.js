@@ -64,7 +64,7 @@ router.post("/", async function(req, res) {
     try {
         const message = new Message(req.body);
         const savedMessage = await message.save();
-        res.status.apply(201).json(savedMessage);
+        res.status(201).json(savedMessage);
     }
     catch {
         res.status(400).send(err);

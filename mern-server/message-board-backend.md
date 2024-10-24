@@ -1,5 +1,8 @@
 # MERN SERVER
 
+This folder creates the backend of the Message board application
+
+
 - (api/messages.js) - // Defines the RESTful web api's capabilities // router
     - this file defines the CRUD API endpoints for managing messages, handling:
         GET /api/messages – Retrieve all messages sorted by posted.
