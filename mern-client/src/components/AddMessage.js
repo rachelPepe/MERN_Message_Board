@@ -6,7 +6,7 @@ React Routers useNavigate() hook returns function that allows app to control the
 
 
 
-import { Form, Button } from"react-bootstrap";     // used to render styled forms and buttons
+import { Form, Button } from "react-bootstrap";     // used to render styled forms and buttons
 import { useState } from "react";      // react hook to manage component state(input values in this case)
 import { useNavigate } from "react-router-dom";    // used to programatically navigate between routes
 import { addMessage } from "../MessageApi";     // function from MessageApi that sends new message to the server
